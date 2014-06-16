@@ -1,0 +1,9 @@
+/Users/pauloortins/Documents/dev/github/ProgrammingEvents/ProgrammingEvents.Core/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile49.AssemblyAttribute.cs
+/Users/pauloortins/Documents/dev/github/ProgrammingEvents/ProgrammingEvents.Core/bin/Debug/ProgrammingEvents.Core.dll.mdb
+/Users/pauloortins/Documents/dev/github/ProgrammingEvents/ProgrammingEvents.Core/bin/Debug/ProgrammingEvents.Core.dll
+/Users/pauloortins/Documents/dev/github/ProgrammingEvents/ProgrammingEvents.Core/obj/Debug/ProgrammingEvents.Core.dll
+/Users/pauloortins/Documents/dev/github/ProgrammingEvents/ProgrammingEvents.Core/obj/Debug/ProgrammingEvents.Core.dll.mdb
+/Users/pauloortins/Documents/dev/github/ProgrammingEvents/ProgrammingEvents.Core/bin/Debug/System.Net.Http.dll
+/Users/pauloortins/Documents/dev/github/ProgrammingEvents/ProgrammingEvents.Core/bin/Debug/System.Net.Http.Primitives.dll
+/Users/pauloortins/Documents/dev/github/ProgrammingEvents/ProgrammingEvents.Core/bin/Debug/System.Net.Http.Extensions.dll
+/Users/pauloortins/Documents/dev/github/ProgrammingEvents/ProgrammingEvents.Core/bin/Debug/Newtonsoft.Json.dll

@@ -103,9 +103,16 @@
     <Compile Include="ProgrammingEventsViewController.designer.cs">
       <DependentUpon>ProgrammingEventsViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="FileAccessor.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="ProgrammingEvents.Core\ProgrammingEvents.Core.csproj">
+      <Project>{321F65D8-0CCC-4987-88EA-B1F09DEFB72E}</Project>
+      <Name>ProgrammingEvents.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

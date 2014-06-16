@@ -1,0 +1,10 @@
+mscorlib.dll
+System.dll
+System.Core.dll
+Mono.Dynamic.Interpreter.dll
+System.Xml.dll
+ProgrammingEvents.Core.dll
+System.Net.Http.dll
+System.Runtime.dll
+System.ComponentModel.Composition.dll
+System.Threading.Tasks.dll

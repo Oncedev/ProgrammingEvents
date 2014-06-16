@@ -3,6 +3,7 @@ using System.Drawing;
 
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using ProgrammingEvents.Core;
 
 namespace ProgrammingEvents
 {
@@ -27,6 +28,7 @@ namespace ProgrammingEvents
 			base.ViewDidLoad ();
 			
 			// Perform any additional setup after loading the view, typically from a nib.
+			new EventManager (new FileAccessor()).GetData();
 		}
 
 		public override void ViewWillAppear (bool animated)
