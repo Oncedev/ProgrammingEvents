@@ -21,6 +21,7 @@ namespace ProgrammingEvents
 		{
 			base.ViewWillAppear (animated);
 			NameText.Text = Event.Title;
+
 			DateText.Text = Event.StartDate.ToShortDateString() + " - " + Event.EndDate.ToShortDateString();
 			SiteText.Text = Event.Site;
 			AddressText.Text = Event.Address;

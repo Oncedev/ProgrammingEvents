@@ -46,7 +46,7 @@ namespace ProgrammingEvents.Core
 
 		public Event ()
 		{
-		}
+		}			
 	}
 }
 

@@ -25,7 +25,9 @@ namespace ProgrammingEvents
 			var cell = tableView.DequeueReusableCell (cellIdentifier);
 			var item = _events[indexPath.Row];
 			cell.TextLabel.Text = item.Title;
-			cell.DetailTextLabel.Text = item.Address;
+
+			var date = item.StartDate == item.EndDate ? item.StartDate.ToShortDateString() : item.StartDate.ToShortDateString() + " - " + item.EndDate.ToShortDateString();
+			cell.DetailTextLabel.Text = date + " at " + item.Address;
 
 			return cell;
 		}
