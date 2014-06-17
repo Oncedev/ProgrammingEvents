@@ -1,0 +1,254 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9A06BE00000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B135C00000000000000000 /* UIKit.framework */; };
+		2D2FA9F10000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C0B68F0000000000000000 /* MapKit.framework */; };
+		263128900000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F41F2700000000000000000 /* Foundation.framework */; };
+		14056E830000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17967B210000000000000000 /* CoreGraphics.framework */; };
+		337553B20000000000000000 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 370660500000000000000000 /* Default-568h@2x.png */; };
+		8A8BC4A00000000000000000 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39C8E800000000000000000 /* Info.plist */; };
+		36D37D340000000000000000 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A6489D20000000000000000 /* Entitlements.plist */; };
+		24FE3E1E0000000000000000 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288F4ABC0000000000000000 /* MainStoryboard.storyboard */; };
+		186920670000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA2D050000000000000000 /* AppDelegate.h */; };
+		19E5520C0000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D765EAA0000000000000000 /* AppDelegate.m */; };
+		2F18BAA40000000000000000 /* ProgrammingEventsViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 32A9C7420000000000000000 /* ProgrammingEventsViewController.h */; };
+		BB169E000000000000000000 /* ProgrammingEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C233C00000000000000000 /* ProgrammingEventsViewController.m */; };
+		2432B1AE0000000000000000 /* ListController.h in Sources */ = {isa = PBXBuildFile; fileRef = 27C3BE4C0000000000000000 /* ListController.h */; };
+		3244010A0000000000000000 /* ListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D50DA80000000000000000 /* ListController.m */; };
+		15BB9C1A0000000000000000 /* MapController.h in Sources */ = {isa = PBXBuildFile; fileRef = 194CA8B80000000000000000 /* MapController.h */; };
+		1CAAD23A0000000000000000 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203BDED80000000000000000 /* MapController.m */; };
+		1C77EF1E0000000000000000 /* EventDetailController.h in Sources */ = {isa = PBXBuildFile; fileRef = 2008FBBC0000000000000000 /* EventDetailController.h */; };
+		3FBCA7120000000000000000 /* EventDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DB3B000000000000000000 /* EventDetailController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		163530B70000000000000000 /* ProgrammingEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "ProgrammingEvents.app"; path = "ProgrammingEvents.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B135C00000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		30C0B68F0000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		5F41F2700000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		17967B210000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		370660500000000000000000 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C39C8E800000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = "<group>"; };
+		3A6489D20000000000000000 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Entitlements.plist"; path = "Entitlements.plist"; sourceTree = "<group>"; };
+		288F4ABC0000000000000000 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "MainStoryboard.storyboard"; path = "MainStoryboard.storyboard"; sourceTree = "<group>"; };
+		1BFA2D050000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		1D765EAA0000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+		32A9C7420000000000000000 /* ProgrammingEventsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ProgrammingEventsViewController.h"; path = "ProgrammingEventsViewController.h"; sourceTree = "<group>"; };
+		44C233C00000000000000000 /* ProgrammingEventsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ProgrammingEventsViewController.m"; path = "ProgrammingEventsViewController.m"; sourceTree = "<group>"; };
+		27C3BE4C0000000000000000 /* ListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ListController.h"; path = "ListController.h"; sourceTree = "<group>"; };
+		35D50DA80000000000000000 /* ListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ListController.m"; path = "ListController.m"; sourceTree = "<group>"; };
+		194CA8B80000000000000000 /* MapController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MapController.h"; path = "MapController.h"; sourceTree = "<group>"; };
+		203BDED80000000000000000 /* MapController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MapController.m"; path = "MapController.m"; sourceTree = "<group>"; };
+		2008FBBC0000000000000000 /* EventDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EventDetailController.h"; path = "EventDetailController.h"; sourceTree = "<group>"; };
+		34DB3B000000000000000000 /* EventDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "EventDetailController.m"; path = "EventDetailController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		283D52E90000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A06BE00000000000000000 /* UIKit.framework in Frameworks */,
+				2D2FA9F10000000000000000 /* MapKit.framework in Frameworks */,
+				263128900000000000000000 /* Foundation.framework in Frameworks */,
+				14056E830000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		856C47700000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				32F078C30000000000000000 /* ProgrammingEvents */,
+				1309EA510000000000000000 /* Frameworks */,
+				3DA39E9D0000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DA39E9D0000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				163530B70000000000000000 /* ProgrammingEvents.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		1309EA510000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2B135C00000000000000000 /* UIKit.framework */,
+				30C0B68F0000000000000000 /* MapKit.framework */,
+				5F41F2700000000000000000 /* Foundation.framework */,
+				17967B210000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		32F078C30000000000000000 /* ProgrammingEvents */ = {
+			isa = PBXGroup;
+			children = (
+				1BFA2D050000000000000000 /* AppDelegate.h */,
+				370660500000000000000000 /* Default-568h@2x.png */,
+				3A6489D20000000000000000 /* Entitlements.plist */,
+				2008FBBC0000000000000000 /* EventDetailController.h */,
+				C39C8E800000000000000000 /* Info.plist */,
+				27C3BE4C0000000000000000 /* ListController.h */,
+				288F4ABC0000000000000000 /* MainStoryboard.storyboard */,
+				194CA8B80000000000000000 /* MapController.h */,
+				32A9C7420000000000000000 /* ProgrammingEventsViewController.h */,
+				1BC749E90000000000000000 /* Supporting Files */,
+			);
+			name = "ProgrammingEvents";
+			sourceTree = "<group>";
+		};
+		1BC749E90000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D765EAA0000000000000000 /* AppDelegate.m */,
+				34DB3B000000000000000000 /* EventDetailController.m */,
+				35D50DA80000000000000000 /* ListController.m */,
+				203BDED80000000000000000 /* MapController.m */,
+				44C233C00000000000000000 /* ProgrammingEventsViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7A6E2700000000000000000 /* ProgrammingEvents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B820ADD00000000000000000 /* Build configuration list for PBXNativeTarget "ProgrammingEvents" */;
+			buildPhases = (
+				166813D30000000000000000 /* Sources */,
+				283D52E90000000000000000 /* Frameworks */,
+				3F52B35E0000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ProgrammingEvents";
+			productName = "ProgrammingEvents";
+			productReference = 163530B70000000000000000 /* ProgrammingEvents.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C7484D00000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CEE503000000000000000000 /* Build configuration list for PBXProject "ProgrammingEvents" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 856C47700000000000000000;
+			productRefGroup = 3DA39E9D0000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7A6E2700000000000000000 /* ProgrammingEvents */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F52B35E0000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				337553B20000000000000000 /* Default-568h@2x.png in Resources */,
+				8A8BC4A00000000000000000 /* Info.plist in Resources */,
+				36D37D340000000000000000 /* Entitlements.plist in Resources */,
+				24FE3E1E0000000000000000 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		166813D30000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186920670000000000000000 /* AppDelegate.h in Sources */,
+				19E5520C0000000000000000 /* AppDelegate.m in Sources */,
+				2F18BAA40000000000000000 /* ProgrammingEventsViewController.h in Sources */,
+				BB169E000000000000000000 /* ProgrammingEventsViewController.m in Sources */,
+				2432B1AE0000000000000000 /* ListController.h in Sources */,
+				3244010A0000000000000000 /* ListController.m in Sources */,
+				15BB9C1A0000000000000000 /* MapController.h in Sources */,
+				1CAAD23A0000000000000000 /* MapController.m in Sources */,
+				1C77EF1E0000000000000000 /* EventDetailController.h in Sources */,
+				3FBCA7120000000000000000 /* EventDetailController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24B16A800000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		361BBF290000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "ProgrammingEvents";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEE503000000000000000000 /* Build configuration list for PBXProject "ProgrammingEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24B16A800000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		B820ADD00000000000000000 /* Build configuration list for PBXNativeTarget "ProgrammingEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				361BBF290000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C7484D00000000000000000 /* Project object */;
+}

@@ -19,6 +19,8 @@ namespace ProgrammingEvents
 		{
 			base.ViewWillAppear (animated);
 			TableView.Source = new EventTableSource (_eventManager.GetData());
+
+			this.TabBarController.TabBar.Hidden = false;
 		}
 
 		public override void PrepareForSegue (UIStoryboardSegue segue, NSObject sender)
@@ -28,6 +30,8 @@ namespace ProgrammingEvents
 				if (navctlr != null) {
 					var source = TableView.Source as EventTableSource;
 					var rowPath = TableView.IndexPathForSelectedRow;
+					var item = source.GetItem(rowPath.Row);
+					navctlr.SetEvent (item); // to be defined on the TaskDetailViewController
 				}
 			}
 		}

@@ -25,8 +25,13 @@ namespace ProgrammingEvents
 			var cell = tableView.DequeueReusableCell (cellIdentifier);
 			var item = _events[indexPath.Row];
 			cell.TextLabel.Text = item.Title;
+			cell.DetailTextLabel.Text = item.Address;
 
 			return cell;
+		}
+
+		public Event GetItem(int id) {
+			return _events[id];
 		}
 	}
 }

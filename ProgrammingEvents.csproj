@@ -109,10 +109,15 @@
     <Compile Include="ListController.designer.cs">
       <DependentUpon>ListController.cs</DependentUpon>
     </Compile>
-    <Compile Include="EventDetailController.cs" />
     <Compile Include="MapController.cs" />
     <Compile Include="MapController.designer.cs">
       <DependentUpon>MapController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventAnnotation.cs" />
+    <Compile Include="MapDelegate.cs" />
+    <Compile Include="EventDetailController.cs" />
+    <Compile Include="EventDetailController.designer.cs">
+      <DependentUpon>EventDetailController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
