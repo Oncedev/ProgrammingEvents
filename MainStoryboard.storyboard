@@ -27,7 +27,7 @@
             <objects>
                 <viewController id="7" sceneMemberID="viewController" customClass="MapController">
                     <view key="view" contentMode="scaleToFill" id="14">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews/>
@@ -47,12 +47,12 @@
             <objects>
                 <tableViewController id="27" sceneMemberID="viewController" customClass="ListController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLine" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="28" separatorInsetType="0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="41" translatesAutoresizingMaskIntoConstraints="NO" reuseIdentifier="eventcell" style="IBUITableViewCellStyleSubtitle" separatorInsetType="0" accessoryType="disclosureIndicator" textLabel="167" detailTextLabel="168">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="41" id="42">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -92,7 +92,7 @@
             <objects>
                 <tableViewController id="47" sceneMemberID="viewController" customClass="EventDetailController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLine" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="48" separatorInsetType="1" separatorInsetsMinX="0.0" separatorInsetsMaxX="0.0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -103,7 +103,7 @@
                             <tableViewSection headerTitle="Basic Info" id="107">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="108">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="108" id="109">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -128,7 +128,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="110">
-                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="163" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="110" id="111">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -154,7 +154,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="112">
-                                        <rect key="frame" x="0.0" y="143" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="207" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="112" id="113">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -180,7 +180,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="128">
-                                        <rect key="frame" x="0.0" y="187" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="251" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="128" id="129">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -209,7 +209,7 @@
                             <tableViewSection headerTitle="Other Info" id="114">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="115" rowHeight="0">
-                                        <rect key="frame" x="0.0" y="544" width="320" height="284"/>
+                                        <rect key="frame" x="0.0" y="608" width="320" height="284"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="115" id="116">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="283"/>
@@ -253,7 +253,7 @@
                     <connections>
                         <segue destination="27" kind="relationship" relationship="rootViewController" id="75"/>
                     </connections>
-                    <tabBarItem key="tabBarItem" title="List" id="73"/>
+                    <tabBarItem key="tabBarItem" title="List" id="73" image="list.png"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="64" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -269,7 +269,7 @@
                     <connections>
                         <segue destination="7" kind="relationship" relationship="rootViewController" id="96"/>
                     </connections>
-                    <tabBarItem key="tabBarItem" title="Map" id="94"/>
+                    <tabBarItem key="tabBarItem" title="Map" id="94" image="earth15.png"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="85" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -303,5 +303,7 @@
     </simulatedMetricsContainer>
     <resources>
         <image name="Default-568h.png" width="640" height="1136"/>
+        <image name="earth15.png" width="24" height="24"/>
+        <image name="list.png" width="24" height="24"/>
     </resources>
 </document>
