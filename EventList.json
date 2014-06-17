@@ -8,5 +8,45 @@
         "Latitude": "-8.049940",
         "Longitude": "-34.878044",
         "Site": "http://2014.pythonbrasil.org.br/"
+    },
+    {
+        "Title": "RuPy Natal 2014",
+        "Description": "RuPy é um evento internacional que reúne comunidades de diferentes linguagens de programação, como: Ruby, Python, JavaScript e tecnologias relacionadas.",
+        "StartDate": "10/17/2014",
+        "EndDate": "10/18/2014",
+        "Address": "Natal, Brazil",
+        "Latitude": "-5.811387,",
+        "Longitude": "-35.203147",
+        "Site": "http://natal.rupy.com.br/"
+    },
+    {
+        "Title": "The Developers Conference",
+        "Description": "TDC 2014 São Paulo",
+        "StartDate": "08/05/2014",
+        "EndDate": "08/09/2014",
+        "Address": "São Paulo, Brazil",
+        "Latitude": "-23.599893",
+        "Longitude": "-46.676367",
+        "Site": "http://www.thedevelopersconference.com.br/"
+    },
+    {
+        "Title": "The Developers Conference",
+        "Description": "TDC 2014 Porto Alegre",
+        "StartDate": "10/16/2014",
+        "EndDate": "10/18/2014",
+        "Address": "Porto Alegre, Brazil",
+        "Latitude": "-30.035398",
+        "Longitude": "-51.219740",
+        "Site": "http://www.thedevelopersconference.com.br/"
+    },
+    {
+        "Title": "JSConf BR 2014",
+        "Description": "JSConf BR 2014",
+        "StartDate": "04/26/2014",
+        "EndDate": "04/26/2014",
+        "Address": "Fortaleza, Brazil",
+        "Latitude": "-3.730910",
+        "Longitude": "-38.524294",
+        "Site": "http://2014.jsconfbr.org/"
     }
 ]
