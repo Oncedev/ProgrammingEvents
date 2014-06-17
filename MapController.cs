@@ -42,7 +42,8 @@ namespace ProgrammingEvents
 			double lat = 30.2652233534254;
 			double lon = -97.73815460962083;
 			CLLocationCoordinate2D mapCenter = new CLLocationCoordinate2D (lat, lon);
-			MKCoordinateRegion mapRegion = MKCoordinateRegion.FromDistance (mapCenter, 100, 100);
+			MKCoordinateRegion mapRegion = MKCoordinateRegion.FromDistance (mapCenter, 100, 5000000);
+
 			map.CenterCoordinate = mapCenter;
 			map.Region = mapRegion;
 
