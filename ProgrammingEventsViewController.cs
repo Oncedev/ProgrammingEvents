@@ -7,10 +7,13 @@ using ProgrammingEvents.Core;
 
 namespace ProgrammingEvents
 {
-	public partial class ProgrammingEventsViewController : UIViewController
+	public partial class ProgrammingEventsViewController : UITabBarController
 	{
-		public ProgrammingEventsViewController (IntPtr handle) : base (handle)
+		UIViewController tabList, tabMap;
+
+		public ProgrammingEventsViewController ()
 		{
+
 		}
 
 		public override void DidReceiveMemoryWarning ()
@@ -28,7 +31,11 @@ namespace ProgrammingEvents
 			base.ViewDidLoad ();
 			
 			// Perform any additional setup after loading the view, typically from a nib.
-			new EventManager (new FileAccessor()).GetData();
+			var eventManager = new EventManager (new FileAccessor ());
+
+			eventManager.UpdateData ();
+
+			var events = eventManager.GetData ();
 		}
 
 		public override void ViewWillAppear (bool animated)

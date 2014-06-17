@@ -4,6 +4,9 @@
         "Description": "The PythonBrazil is currently considered one of the main tech events at Latin America.",
         "StartDate": "11/04/2014",
         "EndDate": "11/08/2014",
-        "Address": "Recife, Brazil"
+        "Address": "Recife, Brazil",
+        "Latitude": "-8.049940",
+        "Longitude:" : "-34.878044",
+        "Site": "http://2014.pythonbrasil.org.br/"
     }
 ]

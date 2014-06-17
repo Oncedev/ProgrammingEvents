@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ProgrammingEvents.Core
 {
 	public interface IFileAccessor
 	{
-		void SaveEvents(string content);
+		void SaveContent(string content);
+
+		string GetContent ();
 	}		
 }
 

@@ -104,6 +104,16 @@
       <DependentUpon>ProgrammingEventsViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="FileAccessor.cs" />
+    <Compile Include="EventTableSource.cs" />
+    <Compile Include="ListController.cs" />
+    <Compile Include="ListController.designer.cs">
+      <DependentUpon>ListController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventDetailController.cs" />
+    <Compile Include="MapController.cs" />
+    <Compile Include="MapController.designer.cs">
+      <DependentUpon>MapController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />

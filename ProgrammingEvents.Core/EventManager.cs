@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Net.Http;
 using System.IO;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace ProgrammingEvents.Core
 {
@@ -17,16 +19,22 @@ namespace ProgrammingEvents.Core
 			_fileAccessor = fileAccessor;
 		}
 
-		public void GetData() {
+		public void UpdateData() {
 
 			try {
-				var response = _client.GetAsync("willmendesneto/keepr/master/bower.json").Result;
+				var response = _client.GetAsync("pauloortins/ProgrammingEvents/master/EventList.json").Result;
 				var content = response.Content.ReadAsStringAsync().Result;
 
-				_fileAccessor.SaveEvents(content);
+				_fileAccessor.SaveContent(content);
 			} catch (Exception ex) {
 
 			}
+		}
+
+		public List<Event> GetData() {
+			var content = _fileAccessor.GetContent ();
+			var events = JsonConvert.DeserializeObject<List<Event>> (content);
+			return events;
 		}
 	}
 }

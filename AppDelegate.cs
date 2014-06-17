@@ -42,6 +42,14 @@ namespace ProgrammingEvents
 		public override void WillTerminate (UIApplication application)
 		{
 		}
+
+		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
+		{
+
+
+			return true;
+		}
+
 	}
 }
 
