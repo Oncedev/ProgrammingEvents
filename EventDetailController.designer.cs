@@ -16,23 +16,23 @@ namespace ProgrammingEvents
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel AddressText { get; set; }
+		MonoTouch.UIKit.UILabel AddressText { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel DateText { get; set; }
+		MonoTouch.UIKit.UILabel DateText { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UITextView DescriptionText { get; set; }
+		MonoTouch.UIKit.UITextView DescriptionText { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel NameText { get; set; }
+		MonoTouch.UIKit.UILabel NameText { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel SiteText { get; set; }
+		MonoTouch.UIKit.UILabel SiteText { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{

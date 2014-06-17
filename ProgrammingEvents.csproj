@@ -119,6 +119,11 @@
     <Compile Include="EventDetailController.designer.cs">
       <DependentUpon>EventDetailController.cs</DependentUpon>
     </Compile>
+    <Compile Include="SiteController.cs" />
+    <Compile Include="SiteController.designer.cs">
+      <DependentUpon>SiteController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingOverlay.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
