@@ -15,6 +15,12 @@ namespace ProgrammingEvents
 			_eventManager = new EventManager (new FileAccessor ());
 		}
 
+		public override void ViewDidLoad ()
+		{
+			base.ViewDidLoad ();
+			_eventManager.UpdateData ();
+		}
+
 		public override void ViewWillAppear (bool animated)
 		{
 			base.ViewWillAppear (animated);
