@@ -6,6 +6,7 @@ using MonoTouch.MapKit;
 using MonoTouch.CoreLocation;
 using ProgrammingEvents.Core;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ProgrammingEvents
 {
@@ -52,7 +53,7 @@ namespace ProgrammingEvents
 			});
 			map.Delegate = mapDelegate;
 
-			_events = _eventManager.GetData ();
+			_events = _eventManager.GetData ().Where(x => x.StartDate.Date >= DateTime.Today.Date).ToList();
 
 			_events.ForEach(x => map.AddAnnotation (
 				new EventAnnotation (

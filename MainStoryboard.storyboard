@@ -34,7 +34,7 @@
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBarItem key="tabBarItem" title="Map" id="79"/>
-                    <navigationItem title="Event Map" id="95" key="navigationItem"/>
+                    <navigationItem title="Upcoming Events" id="95" key="navigationItem"/>
                     <connections>
                         <segue destination="47" kind="push" id="101" identifier="EventSegue"/>
                     </connections>
