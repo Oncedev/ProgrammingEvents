@@ -40,10 +40,8 @@ namespace ProgrammingEvents
 			map.ZoomEnabled = true;
 			map.ScrollEnabled = true;
 
-			double lat = 30.2652233534254;
-			double lon = -97.73815460962083;
-			CLLocationCoordinate2D mapCenter = new CLLocationCoordinate2D (lat, lon);
-			MKCoordinateRegion mapRegion = MKCoordinateRegion.FromDistance (mapCenter, 100, 5000000);
+			var mapCenter = GetDefaultLocation ();
+			var mapRegion = MKCoordinateRegion.FromDistance (mapCenter, 100, 5000000);
 
 			map.CenterCoordinate = mapCenter;
 			map.Region = mapRegion;
@@ -63,6 +61,18 @@ namespace ProgrammingEvents
 						Longitude= x.Longitude})));
 			
 		}	
+
+		public CLLocationCoordinate2D GetDefaultLocation() {
+			if (map.UserLocationVisible) {
+				return map.UserLocation.Coordinate;
+			}
+
+			// Fallback
+			double lat = 30.2652233534254;
+			double lon = -97.73815460962083;
+			CLLocationCoordinate2D mapCenter = new CLLocationCoordinate2D (lat, lon);
+			return mapCenter;
+		}
 
 		public override void PrepareForSegue (UIStoryboardSegue segue, NSObject sender)
 		{

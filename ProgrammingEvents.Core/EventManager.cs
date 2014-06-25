@@ -32,9 +32,14 @@ namespace ProgrammingEvents.Core
 		}
 
 		public List<Event> GetData() {
-			var content = _fileAccessor.GetContent ();
-			var events = JsonConvert.DeserializeObject<List<Event>> (content);
-			return events;
+
+			try {
+				var content = _fileAccessor.GetContent ();
+				var events = JsonConvert.DeserializeObject<List<Event>> (content);
+				return events;	
+			} catch (Exception ex) {
+				return new List<Event> ();
+			}
 		}
 	}
 }
