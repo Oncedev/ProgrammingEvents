@@ -1,4 +1,4 @@
-# Version: 7.2.3.39 (fc6f56b)
+# Version: 7.2.5.4 (e7f4f92)
 # [first argument, ignore] # /Users/pauloortins/Documents/dev/github/ProgrammingEvents/bin/iPhoneSimulator/Debug/mtouch.exe
 /Developer/MonoTouch/usr/bin/mtouch \
 	-sdkroot \
@@ -8,7 +8,7 @@
 	--nomanifest \
 	--nosign \
 	-sim \
-	/Users/pauloortins/Documents/dev/github/ProgrammingEvents/bin/iPhoneSimulator/Debug/ProgrammingEvents.app \
+	/Users/pauloortins/Documents/dev/github/ProgrammingEvents/bin/iPhoneSimulator/Debug/ProgrammingEventsiOS.app \
 	-r \
 	/Users/pauloortins/Documents/dev/github/ProgrammingEvents/ProgrammingEvents.Core/bin/Debug/ProgrammingEvents.Core.dll \
 	-r \

@@ -12,13 +12,15 @@ namespace ProgrammingEvents
 {
 	partial class MapController : UIViewController
 	{
-		MKMapView map;
-		List<Event> _events;
+		protected MKMapView map;
+		private List<Event> _events;
 		private EventManager _eventManager;
+		private CLLocationManager _locationManager;
 
 		public MapController (IntPtr handle) : base (handle)
 		{
 			_eventManager = new EventManager (new FileAccessor ());
+			_locationManager = new CLLocationManager ();
 		}
 
 		public override void LoadView ()
@@ -63,8 +65,8 @@ namespace ProgrammingEvents
 		}	
 
 		public CLLocationCoordinate2D GetDefaultLocation() {
-			if (map.UserLocationVisible) {
-				return map.UserLocation.Coordinate;
+			if (CLLocationManager.LocationServicesEnabled) {
+				return _locationManager.Location.Coordinate;
 			}
 
 			// Fallback

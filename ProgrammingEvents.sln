@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingEvents", "ProgrammingEvents.csproj", "{DCD51DDC-D56A-4BF8-B712-31B066A357FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingEvents.iOS", "ProgrammingEvents.iOS.csproj", "{DCD51DDC-D56A-4BF8-B712-31B066A357FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingEvents.Core", "ProgrammingEvents.Core\ProgrammingEvents.Core.csproj", "{321F65D8-0CCC-4987-88EA-B1F09DEFB72E}"
 EndProject
@@ -41,6 +41,6 @@ Global
 		{DCD51DDC-D56A-4BF8-B712-31B066A357FC}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ProgrammingEvents.csproj
+		StartupItem = ProgrammingEvents.iOS.csproj
 	EndGlobalSection
 EndGlobal
