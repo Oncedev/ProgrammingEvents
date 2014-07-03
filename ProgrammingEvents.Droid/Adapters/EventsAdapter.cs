@@ -27,7 +27,8 @@ namespace ProgrammingEvents.Droid
 	{
 		Context _context;
 		EventManager _manager;
-		List<Event> _events;
+		List<Event> _pastEvents;
+		List<Event> _upcomingEvents;
 
 		public EventsAdapter(Context c)
 		{
@@ -38,19 +39,29 @@ namespace ProgrammingEvents.Droid
 		public void UpdateEvents()
 		{
 			_manager.UpdateData ();
-			_events = _manager.GetData ();
+			var events = _manager.GetData ();
+
+			_pastEvents = events.GetPastEvents ();
+			_upcomingEvents = events.GetUpcomingEvents ();
+
 			NotifyDataSetChanged ();
 		}
 
 		public override int Count {
 			get {
-				return _events.Count;
+				return _pastEvents.Count + _upcomingEvents.Count + 2;
 			}
 		}
 
 		public override Java.Lang.Object GetItem (int position)
 		{
-			return new JavaEvent (_events [position]);
+			if (position > 0 && position <= _pastEvents.Count)
+				return new JavaEvent (_pastEvents [position - 1]);
+
+			if (position > _pastEvents.Count + 1 && position <= _pastEvents.Count + 1 + _upcomingEvents.Count)
+				return new JavaEvent (_upcomingEvents [position - _pastEvents.Count - 2]);
+
+			return null;
 		}
 
 		public override long GetItemId (int position)
@@ -60,6 +71,20 @@ namespace ProgrammingEvents.Droid
 
 		public override View GetView (int position, View convertView, ViewGroup parent)
 		{
+			if (position == 0) {
+				var pastLabel = (TextView) LayoutInflater.From(_context).Inflate(Resource.Layout.SeparatorLabel, parent, false);
+				pastLabel.Text = "Past";
+
+				return pastLabel;
+			}
+
+			if (position == _pastEvents.Count + 1) {
+				var upcomingLabel = (TextView) LayoutInflater.From(_context).Inflate(Resource.Layout.SeparatorLabel, parent, false);
+				upcomingLabel.Text = "Upcoming";
+
+				return upcomingLabel;
+			}
+
 			if (convertView == null) {
 				convertView = LayoutInflater
 					.From (_context)
