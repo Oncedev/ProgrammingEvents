@@ -16,13 +16,10 @@ namespace ProgrammingEvents.Droid
 		{
 			base.OnCreate (savedInstanceState);
 
-			// TODO
-			var strings = new string[] { "Event 1", "Event 2", "Event 3" };
+			var adapter = new EventsAdapter (Activity);
+			ListAdapter = adapter;
 
-			ListAdapter = new ArrayAdapter<string> (
-				Activity,
-				Android.Resource.Layout.SimpleListItem1,
-				strings);
+			adapter.UpdateEvents ();
 		}
 	}
 }

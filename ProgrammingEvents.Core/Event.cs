@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace ProgrammingEvents.Core
 {
@@ -42,6 +43,14 @@ namespace ProgrammingEvents.Core
 		public double Longitude {
 			get;
 			set;
+		}
+
+		public string DetailLabelText {
+			get {
+				var shortDate = DateTimeFormatInfo.CurrentInfo.ShortDatePattern;
+				var date = StartDate == EndDate ? StartDate.ToString(shortDate) : StartDate.ToString(shortDate) + " - " + EndDate.ToString(shortDate);
+				return date + " at " + Address;
+			}
 		}
 
 		public Event ()
