@@ -1,11 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina4.7.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MapController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProgrammingEvents.Core/EventManager.cs">
     <Files>
       <File FileName="ProgrammingEvents.Core/EventManager.cs" Line="1" Column="1" />
-      <File FileName="ListController.cs" Line="1" Column="1" />
-      <File FileName="FileAccessor.cs" Line="1" Column="1" />
-      <File FileName="MapController.cs" Line="71" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
