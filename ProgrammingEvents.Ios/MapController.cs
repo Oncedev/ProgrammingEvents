@@ -42,11 +42,7 @@ namespace ProgrammingEvents
 			map.ZoomEnabled = true;
 			map.ScrollEnabled = true;
 
-			var mapCenter = GetDefaultLocation ();
-			var mapRegion = MKCoordinateRegion.FromDistance (mapCenter, 100, 5000000);
-
-			map.CenterCoordinate = mapCenter;
-			map.Region = mapRegion;
+			CenterMap ();
 
 			var mapDelegate = new MapDelegate ((title) => {
 				this.PerformSegue("EventSegue", title);
@@ -61,11 +57,20 @@ namespace ProgrammingEvents
 					new CLLocationCoordinate2D() { 
 						Latitude=x.Latitude, 
 						Longitude= x.Longitude})));
-			
+
+			_locationManager.AuthorizationChanged += (object sender, CLAuthorizationChangedEventArgs e) => {CenterMap();};			
 		}	
 
+		public void CenterMap() {
+			var mapCenter = GetDefaultLocation ();
+			var mapRegion = MKCoordinateRegion.FromDistance (mapCenter, 100, 5000000);
+
+			map.CenterCoordinate = mapCenter;
+			map.Region = mapRegion;
+		}
+
 		public CLLocationCoordinate2D GetDefaultLocation() {
-			if (CLLocationManager.LocationServicesEnabled) {
+			if (CLLocationManager.LocationServicesEnabled && CLLocationManager.Status == CLAuthorizationStatus.Authorized) {
 				return _locationManager.Location.Coordinate;
 			}
 

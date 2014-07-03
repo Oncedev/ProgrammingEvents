@@ -19,12 +19,6 @@ namespace ProgrammingEvents
 		public override void ViewDidLayoutSubviews ()
 		{
 			base.ViewDidLayoutSubviews ();
-
-			var length = MonoTouch.ObjCRuntime.Messaging.float_objc_msgSend (
-				TopLayoutGuide.Handle,
-				(new Selector("length")).Handle);
-
-			WebView.ScrollView.ContentInset = new UIEdgeInsets (length, 0, 0, 0);
 		}
 
 		public override void ViewDidLoad ()
@@ -38,6 +32,13 @@ namespace ProgrammingEvents
 			};				
 
 			WebView.LoadFinished += (sender, e) => {
+
+				var length = MonoTouch.ObjCRuntime.Messaging.float_objc_msgSend (
+					TopLayoutGuide.Handle,
+					(new Selector("length")).Handle);
+
+				WebView.ScrollView.ContentInset = new UIEdgeInsets (length, 0, 0, 0);
+
 				loadingOverlay.Hide ();
 			};
 
