@@ -1,17 +1,16 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina4.7.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MapController.cs">
+﻿<Properties GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="Android.0424334437" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProgrammingEvents.Droid\MainActivity.cs">
     <Files>
-      <File FileName="ProgrammingEvents.Core/EventManager.cs" Line="1" Column="1" />
-      <File FileName="ListController.cs" Line="1" Column="1" />
-      <File FileName="FileAccessor.cs" Line="1" Column="1" />
-      <File FileName="MapController.cs" Line="71" Column="34" />
+      <File FileName="ProgrammingEvents.Droid\MainActivity.cs" Line="14" Column="28" />
+      <File FileName="ProgrammingEvents.Droid\Resources\layout\Main.axml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/pauloortins/Documents/dev/github/ProgrammingEvents/ProgrammingEvents.Core/EventManager.cs" line="48" column="1" />
+      <Breakpoint file="/Users/pauloortins/Documents/dev/github/ProgrammingEvents/ProgrammingEvents.Core/EventManager.cs" line="43" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ProgrammingEvents.Droid MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" />
 </Properties>
