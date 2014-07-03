@@ -45,11 +45,16 @@ namespace ProgrammingEvents.Core
 			set;
 		}
 
-		public string DetailLabelText {
+		public string DateIntervalText {
 			get {
 				var shortDate = DateTimeFormatInfo.CurrentInfo.ShortDatePattern;
-				var date = StartDate == EndDate ? StartDate.ToString(shortDate) : StartDate.ToString(shortDate) + " - " + EndDate.ToString(shortDate);
-				return date + " at " + Address;
+				return StartDate == EndDate ? StartDate.ToString(shortDate) : StartDate.ToString(shortDate) + " - " + EndDate.ToString(shortDate);
+			}
+		}
+
+		public string DetailLabelText {
+			get {
+				return DateIntervalText + " at " + Address;
 			}
 		}
 

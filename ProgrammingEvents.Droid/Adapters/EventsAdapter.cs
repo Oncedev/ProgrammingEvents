@@ -4,6 +4,7 @@ using Android.Content;
 using Android.Views;
 using Android.Widget;
 using ProgrammingEvents.Core;
+using Newtonsoft.Json;
 
 namespace ProgrammingEvents.Droid
 {
@@ -43,7 +44,6 @@ namespace ProgrammingEvents.Droid
 
 			_pastEvents = events.GetPastEvents ();
 			_upcomingEvents = events.GetUpcomingEvents ();
-
 			NotifyDataSetChanged ();
 		}
 
@@ -89,7 +89,7 @@ namespace ProgrammingEvents.Droid
 				convertView = LayoutInflater
 					.From (_context)
 					.Inflate (
-					Resource.Layout.EventListItemLayout,
+					Resource.Layout.EventListItem,
 					parent,
 					false);
 			}
@@ -100,6 +100,12 @@ namespace ProgrammingEvents.Droid
 
 			eventName.Text = item.e.Title;
 			eventSubtitle.Text = item.e.DetailLabelText;
+
+			convertView.Click += (sender, e) => {
+				var intent = new Intent(_context, typeof(EventActivity));
+				intent.PutExtra("event", JsonConvert.SerializeObject(item.e));
+				_context.StartActivity(intent);
+			};
 
 			return convertView;
 		}
