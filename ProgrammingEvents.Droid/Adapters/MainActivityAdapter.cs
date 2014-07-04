@@ -1,12 +1,13 @@
 ﻿using System;
 using Android.Support.V4.App;
+using Android.Gms.Maps;
 
 namespace ProgrammingEvents.Droid
 {
 	public class MainActivityAdapter : FragmentStatePagerAdapter
 	{
 		EventListFragment eventList = null;
-		EventListFragment map = null;
+		SupportMapFragment map = null;
 
 		public MainActivityAdapter(FragmentManager fm) : base(fm)
 		{
@@ -28,9 +29,9 @@ namespace ProgrammingEvents.Droid
 				return eventList;
 			case 1:
 				if (map == null)
-					map = new EventListFragment ();
+					map = new SupportMapFragment ();
 
-				return map; // Change this later
+				return map;
 			default:
 				return null;
 			}
