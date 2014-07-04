@@ -8,6 +8,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Text.Method;
 using Android.Views;
 using Android.Widget;
 
@@ -33,7 +34,7 @@ namespace ProgrammingEvents.Droid
 			FindViewById<TextView> (Resource.Id.siteLabel).Text = eventData.Site;
 			FindViewById<TextView> (Resource.Id.locationLabel).Text = "TODO";
 
-			FindViewById<TextView>(Resource.Id.otherInfoLabel).Text = "TODO";
+			FindViewById<TextView>(Resource.Id.otherInfoLabel).Text = eventData.Description;
 		}
 	}
 }

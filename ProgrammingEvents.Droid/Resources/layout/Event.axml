@@ -45,9 +45,10 @@
             android:layout_height="wrap_content"
             android:textStyle="bold" />
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:linksClickable="true"
             android:id="@+id/siteLabel" />
         <TextView
             android:text="Location"
