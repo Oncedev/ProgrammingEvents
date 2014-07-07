@@ -9,11 +9,18 @@ using Android.OS;
 using Android.Support.V4.App;
 using Android.Support.V4.View;
 
+using Android.Gms.Maps;
+using Android.Gms.Maps.Model;
+
+using ProgrammingEvents.Core;
+
 namespace ProgrammingEvents.Droid
 {
 	[Activity (Label = "Events", MainLauncher = true)]
 	public class MainActivity : FragmentActivity
 	{
+		bool _mapPopulated = false;
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -31,10 +38,24 @@ namespace ProgrammingEvents.Droid
 				viewPager.SetCurrentItem(0, smoothScroll:true);
 			};
 
+			var adapter = new MainActivityAdapter (SupportFragmentManager);
+
 			var mapTab = ActionBar.NewTab ();
 			mapTab.SetText ("Map");
 			mapTab.TabSelected += (sender, e) => {
 				viewPager.SetCurrentItem(1, smoothScroll:true);
+
+				if (!_mapPopulated) {
+					var mapFrag = (SupportMapFragment) adapter.GetItem(1);
+					var eventsMan = new EventManager(new FileAccessor(this));
+					var events = eventsMan.GetData();
+
+					foreach (var ev in events) {
+						mapFrag.Map.AddMarker(new MarkerOptions().SetPosition(new LatLng(ev.Latitude, ev.Longitude)));
+					}
+
+					_mapPopulated = true;
+				}
 			};
 
 			ActionBar.AddTab (listTab);
@@ -43,7 +64,8 @@ namespace ProgrammingEvents.Droid
 			viewPager.PageSelected += (object sender, ViewPager.PageSelectedEventArgs e) => {
 				ActionBar.SetSelectedNavigationItem(e.Position);
 			};
-			viewPager.Adapter = new MainActivityAdapter (SupportFragmentManager);
+
+			viewPager.Adapter = adapter;
 		}
 	}
 }
