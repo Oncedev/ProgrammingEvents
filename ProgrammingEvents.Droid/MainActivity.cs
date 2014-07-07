@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 using Android.App;
 using Android.Content;
@@ -13,13 +14,15 @@ using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 
 using ProgrammingEvents.Core;
+using Newtonsoft.Json;
 
 namespace ProgrammingEvents.Droid
 {
 	[Activity (Label = "Events", MainLauncher = true)]
-	public class MainActivity : FragmentActivity
+	public class MainActivity : FragmentActivity, GoogleMap.IOnInfoWindowClickListener
 	{
-		bool _mapPopulated = false;
+		List<Marker> _markers = new List<Marker>();
+		List<Event> _events = new List<Event>();
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -45,16 +48,19 @@ namespace ProgrammingEvents.Droid
 			mapTab.TabSelected += (sender, e) => {
 				viewPager.SetCurrentItem(1, smoothScroll:true);
 
-				if (!_mapPopulated) {
+				if (_markers.Count == 0) {
 					var mapFrag = (SupportMapFragment) adapter.GetItem(1);
 					var eventsMan = new EventManager(new FileAccessor(this));
-					var events = eventsMan.GetData();
+					_events = eventsMan.GetData();
 
-					foreach (var ev in events) {
-						mapFrag.Map.AddMarker(new MarkerOptions().SetPosition(new LatLng(ev.Latitude, ev.Longitude)));
-					}
+					foreach (var ev in _events)
+						_markers.Add(
+							mapFrag.Map.AddMarker(
+								new MarkerOptions()
+								.SetPosition(new LatLng(ev.Latitude, ev.Longitude))
+								.SetTitle(ev.Title)));
 
-					_mapPopulated = true;
+					mapFrag.Map.SetOnInfoWindowClickListener(this);
 				}
 			};
 
@@ -66,6 +72,16 @@ namespace ProgrammingEvents.Droid
 			};
 
 			viewPager.Adapter = adapter;
+		}
+
+		public void OnInfoWindowClick(Marker m)
+		{
+			var index = _markers.FindIndex ((Marker other) => other.Id == m.Id);
+			var ev = _events [index];
+
+			var intent = new Intent (this, typeof(EventActivity));
+			intent.PutExtra ("event", JsonConvert.SerializeObject (ev));
+			StartActivity (intent);
 		}
 	}
 }
