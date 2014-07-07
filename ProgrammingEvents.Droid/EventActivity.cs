@@ -32,7 +32,7 @@ namespace ProgrammingEvents.Droid
 			FindViewById<TextView> (Resource.Id.nameLabel).Text = eventData.Title;
 			FindViewById<TextView> (Resource.Id.dateLabel).Text = eventData.DateIntervalText;
 			FindViewById<TextView> (Resource.Id.siteLabel).Text = eventData.Site;
-			FindViewById<TextView> (Resource.Id.locationLabel).Text = "TODO";
+			FindViewById<TextView> (Resource.Id.locationLabel).Text = eventData.Address;
 
 			FindViewById<TextView>(Resource.Id.otherInfoLabel).Text = eventData.Description;
 		}
