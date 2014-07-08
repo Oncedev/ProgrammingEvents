@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="ProgrammingEvents.Droid">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.Oncedev.ProgrammingEvents.Droid">
 	<uses-sdk android:minSdkVersion="14" />
-	<application android:label="ProgrammingEvents.Droid"></application>
+	<application
+		android:label="com.Oncedev.ProgrammingEvents.Droid"
+		android:icon="@drawable/icon"
+		android:theme="@android:style/Theme.DeviceDefault.Light" >
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAz3afF0lI78N6A2GnDx5kKxy10O-GEhLQ"/>
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>

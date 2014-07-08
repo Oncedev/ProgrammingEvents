@@ -36,12 +36,14 @@ namespace ProgrammingEvents.Droid
 			listTab.SetText ("List");
 			listTab.TabSelected += (sender, e) => {
 				viewPager.SetCurrentItem(0, smoothScroll:true);
+				ActionBar.Title = "Event List";
 			};
 
 			var mapTab = ActionBar.NewTab ();
 			mapTab.SetText ("Map");
 			mapTab.TabSelected += (sender, e) => {
 				viewPager.SetCurrentItem(1, smoothScroll:true);
+				ActionBar.Title = "Upcoming events";
 			};
 
 			ActionBar.AddTab (listTab);

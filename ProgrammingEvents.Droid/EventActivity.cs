@@ -35,6 +35,8 @@ namespace ProgrammingEvents.Droid
 			FindViewById<TextView> (Resource.Id.locationLabel).Text = eventData.Address;
 
 			FindViewById<TextView>(Resource.Id.otherInfoLabel).Text = eventData.Description;
+
+			ActionBar.Title = "Event details";
 		}
 	}
 }
