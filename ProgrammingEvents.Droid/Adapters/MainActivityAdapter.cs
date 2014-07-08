@@ -7,7 +7,7 @@ namespace ProgrammingEvents.Droid
 	public class MainActivityAdapter : FragmentStatePagerAdapter
 	{
 		EventListFragment eventList = null;
-		SupportMapFragment map = null;
+		EventMapFragment map = null;
 
 		public MainActivityAdapter(FragmentManager fm) : base(fm)
 		{
@@ -29,7 +29,7 @@ namespace ProgrammingEvents.Droid
 				return eventList;
 			case 1:
 				if (map == null)
-					map = new SupportMapFragment ();
+					map = new EventMapFragment ();
 
 				return map;
 			default:
