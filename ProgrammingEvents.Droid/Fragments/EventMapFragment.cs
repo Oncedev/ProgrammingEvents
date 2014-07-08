@@ -31,7 +31,7 @@ namespace ProgrammingEvents.Droid
 
 			if (_markers.Count == 0) {
 				var eventsMan = new EventManager(new FileAccessor(Activity));
-				_events = eventsMan.GetData();
+				_events = eventsMan.GetData().GetUpcomingEvents();
 
 				_markers = _events.Select (
 					ev => Map.AddMarker (
