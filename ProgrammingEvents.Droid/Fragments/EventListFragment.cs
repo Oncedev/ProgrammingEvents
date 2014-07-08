@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 using Android.Support.V4.App;
 using Android.OS;
@@ -19,7 +20,11 @@ namespace ProgrammingEvents.Droid
 			var adapter = new EventsAdapter (Activity);
 			ListAdapter = adapter;
 
-			adapter.UpdateEvents ();
+			ThreadPool.QueueUserWorkItem (delegate(object state) {
+				Activity.RunOnUiThread(delegate {
+					adapter.UpdateEvents ();
+				});
+			});
 		}
 	}
 }

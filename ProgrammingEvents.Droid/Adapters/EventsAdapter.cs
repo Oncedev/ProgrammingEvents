@@ -49,7 +49,8 @@ namespace ProgrammingEvents.Droid
 
 		public override int Count {
 			get {
-				return _pastEvents.Count + _upcomingEvents.Count + 2;
+				return _pastEvents != null && _upcomingEvents != null?
+					_pastEvents.Count + _upcomingEvents.Count + 2 : 0;
 			}
 		}
 

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 using Android.Support.V4.App;
 using Android.Content;
@@ -29,21 +30,25 @@ namespace ProgrammingEvents.Droid
 		{
 			base.OnStart ();
 
-			if (_markers.Count == 0) {
-				var eventsMan = new EventManager(new FileAccessor(Activity));
-				_events = eventsMan.GetData().GetUpcomingEvents();
+			ThreadPool.QueueUserWorkItem (delegate(object state) {
+				Activity.RunOnUiThread(delegate {
+					if (_markers.Count == 0) {
+						var eventsMan = new EventManager(new FileAccessor(Activity));
+						_events = eventsMan.GetData().GetUpcomingEvents();
 
-				_markers = _events.Select (
-					ev => Map.AddMarker (
-						new MarkerOptions ()
-						.SetPosition (
-							new LatLng (
-								ev.Latitude,
-								ev.Longitude))
-						.SetTitle (
-							ev.Title)))
-					.ToList ();
-			}
+						_markers = _events.Select (
+							ev => Map.AddMarker (
+								new MarkerOptions ()
+								.SetPosition (
+									new LatLng (
+										ev.Latitude,
+										ev.Longitude))
+								.SetTitle (
+									ev.Title)))
+							.ToList ();
+					}
+				});
+			});
 
 			Map.InfoWindowClick += (object sender, GoogleMap.InfoWindowClickEventArgs e) => {
 				var index = _markers.FindIndex ((Marker other) => other.Id == e.P0.Id);
