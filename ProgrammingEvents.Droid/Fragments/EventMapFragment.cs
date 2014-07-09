@@ -21,7 +21,7 @@ using Newtonsoft.Json;
 
 namespace ProgrammingEvents.Droid
 {
-	public class EventMapFragment : SupportMapFragment
+	public class EventMapFragment : SupportMapFragment, GoogleMap.IInfoWindowAdapter
 	{
 		List<Marker> _markers = new List<Marker>();
 		List<Event> _events = new List<Event>();
@@ -56,8 +56,30 @@ namespace ProgrammingEvents.Droid
 
 				var intent = new Intent (Activity, typeof(EventActivity));
 				intent.PutExtra ("event", JsonConvert.SerializeObject (ev));
-				StartActivity (intent);
+				intent.SetFlags(ActivityFlags.ClearTop);
+				Activity.StartActivity (intent);
 			};
+
+			Map.SetInfoWindowAdapter (this);
+		}
+
+		public View GetInfoWindow(Marker m)
+		{
+			return null;
+		}
+
+		public View GetInfoContents(Marker m)
+		{
+			var infoContents =
+				LayoutInflater
+					.From (Activity)
+					.Inflate (
+						Resource.Layout.MapMarkerInfoWindow,
+						null, false);
+			var title = infoContents.FindViewById<TextView> (Resource.Id.markerTitle);
+			title.Text = m.Title;
+
+			return infoContents;
 		}
 	}
 }
