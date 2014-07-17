@@ -58,5 +58,25 @@
         "Latitude": "-11.270215",
         "Longitude": "-37.448164",
         "Site": "http://www.frontinaracaju.com.br/"
+    },
+    {
+        "Title": "FrontinBahia",
+        "Description": "FrontinBahia",
+        "StartDate": "09/13/2014",
+        "EndDate": "09/13/2014",
+        "Address": "Salvador, Brazil",
+        "Latitude": "-12.909381",
+        "Longitude": "-38.329643",
+        "Site": "http://www.frontinbahia.com.br/"
+    },
+    {
+        "Title": "DNAD 2014",
+        "Description": "O .Net Architects Days é uma conferência nacional sem fins lucrativos focada em arquitetura de software. O objetivo do evento foi trazer para o mercado uma visão avançada sobre desenvolvimento de software utilizando padrões, práticas, técnicas e ferramentas que permitem o desenvolvimento sustentável de um aplicativo. Contamos com assuntos técnicos, conceituais, práticos e acadêmicos.",
+        "StartDate": "09/12/2014",
+        "EndDate": "09/13/2014",
+        "Address": "São Paulo, Brazil",
+        "Latitude": "-23.572323",
+        "Longitude": "-46.641991",
+        "Site": "http://dnad.azurewebsites.net/"
     }
 ]
