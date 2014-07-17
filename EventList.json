@@ -48,5 +48,15 @@
         "Latitude": "-3.730910",
         "Longitude": "-38.524294",
         "Site": "http://2014.jsconfbr.org/"
+    },
+    {
+        "Title": "FrontinAracaju",
+        "Description": "FrontinAracaju",
+        "StartDate": "08/02/2014",
+        "EndDate": "08/02/2014",
+        "Address": "Aracaju, Brazil",
+        "Latitude": "-11.270215",
+        "Longitude": "-37.448164",
+        "Site": "http://www.frontinaracaju.com.br/"
     }
 ]
